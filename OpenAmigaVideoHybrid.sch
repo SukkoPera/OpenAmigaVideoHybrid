@@ -1,0 +1,1275 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:OpenAmigaVideoHybrid-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "OpenAmigaVideoHybrid"
+Date "2018-07-15"
+Rev "1"
+Comp "SukkoPera"
+Comment1 "Thanks to kipper2k"
+Comment2 ""
+Comment3 ""
+Comment4 "http://www.amigawiki.de/doku.php?id=de:parts:vidiot"
+$EndDescr
+Text Label 1695 2660 0    50   ~ 0
+dr3
+Text Label 1695 2760 0    50   ~ 0
+dr2
+Text Label 1695 2860 0    50   ~ 0
+dr1
+Text Label 1695 2960 0    50   ~ 0
+dr0
+Text Label 1695 3160 0    50   ~ 0
+dg3
+Text Label 1695 3260 0    50   ~ 0
+dg2
+Text Label 1695 3360 0    50   ~ 0
+dg1
+Text Label 1695 3460 0    50   ~ 0
+dg0
+Text Label 1695 3660 0    50   ~ 0
+db3
+Text Label 1695 3760 0    50   ~ 0
+db2
+Text Label 1695 3860 0    50   ~ 0
+db1
+Text Label 1695 3960 0    50   ~ 0
+db0
+Text Label 1695 4260 0    50   ~ 0
+comp
+Text Label 1695 4360 0    50   ~ 0
+sync
+Text Label 1695 4060 0    50   ~ 0
+blue
+Text Label 1695 3560 0    50   ~ 0
+green
+Text Label 1695 3060 0    50   ~ 0
+red
+Text Label 1695 4160 0    50   ~ 0
+csync
+Text Notes 1525 2170 0    50   ~ 0
++VID
+Text Label 3015 1280 0    50   ~ 0
+dr3
+Text Label 3015 1380 0    50   ~ 0
+dr2
+Text Label 3015 1480 0    50   ~ 0
+dr1
+Text Label 3015 1580 0    50   ~ 0
+dr0
+Text Label 5550 1530 0    50   ~ 0
+red
+$Comp
+L VDD #PWR01
+U 1 1 5B40A59C
+P 1470 2360
+F 0 "#PWR01" H 1470 2210 50  0001 C CNN
+F 1 "VDD" H 1470 2510 50  0000 C CNN
+F 2 "" H 1470 2360 50  0001 C CNN
+F 3 "" H 1470 2360 50  0001 C CNN
+	1    1470 2360
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR02
+U 1 1 5B40A83C
+P 1620 2360
+F 0 "#PWR02" H 1620 2210 50  0001 C CNN
+F 1 "VCC" H 1620 2510 50  0000 C CNN
+F 2 "" H 1620 2360 50  0001 C CNN
+F 3 "" H 1620 2360 50  0001 C CNN
+	1    1620 2360
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x22 J1
+U 1 1 5B40E954
+P 1045 3460
+F 0 "J1" H 1045 4560 50  0000 C CNN
+F 1 "Conn_01x22" H 1045 2260 50  0001 C CNN
+F 2 "OpenAmigaVideoHybrid:Pin_Header_Straight_1x22_Pitch2.54mm" H 1045 3460 50  0001 C CNN
+F 3 "" H 1045 3460 50  0001 C CNN
+	1    1045 3460
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5B40EF5A
+P 1345 4760
+F 0 "#PWR03" H 1345 4510 50  0001 C CNN
+F 1 "GND" H 1345 4610 50  0000 C CNN
+F 2 "" H 1345 4760 50  0001 C CNN
+F 3 "" H 1345 4760 50  0001 C CNN
+	1    1345 4760
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5B40FA55
+P 3365 1280
+F 0 "R1" V 3325 1445 50  0000 C CNN
+F 1 "1k" V 3365 1280 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3295 1280 50  0001 C CNN
+F 3 "" H 3365 1280 50  0001 C CNN
+	1    3365 1280
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5B40FB0C
+P 3365 1380
+F 0 "R2" V 3325 1545 50  0000 C CNN
+F 1 "2k" V 3365 1380 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3295 1380 50  0001 C CNN
+F 3 "" H 3365 1380 50  0001 C CNN
+	1    3365 1380
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5B40FC0F
+P 3365 1480
+F 0 "R3" V 3325 1645 50  0000 C CNN
+F 1 "4k" V 3365 1480 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3295 1480 50  0001 C CNN
+F 3 "" H 3365 1480 50  0001 C CNN
+	1    3365 1480
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5B40FCA3
+P 3365 1580
+F 0 "R4" V 3325 1745 50  0000 C CNN
+F 1 "8k" V 3365 1580 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3295 1580 50  0001 C CNN
+F 3 "" H 3365 1580 50  0001 C CNN
+	1    3365 1580
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR04
+U 1 1 5B4105DF
+P 10855 805
+F 0 "#PWR04" H 10855 655 50  0001 C CNN
+F 1 "VCC" H 10855 955 50  0000 C CNN
+F 2 "" H 10855 805 50  0001 C CNN
+F 3 "" H 10855 805 50  0001 C CNN
+	1    10855 805 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 5B4106FF
+P 10855 935
+F 0 "#FLG05" H 10855 1010 50  0001 C CNN
+F 1 "PWR_FLAG" H 10855 1085 50  0000 C CNN
+F 2 "" H 10855 935 50  0001 C CNN
+F 3 "" H 10855 935 50  0001 C CNN
+	1    10855 935 
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG06
+U 1 1 5B41075E
+P 10340 810
+F 0 "#FLG06" H 10340 885 50  0001 C CNN
+F 1 "PWR_FLAG" H 10340 960 50  0000 C CNN
+F 2 "" H 10340 810 50  0001 C CNN
+F 3 "" H 10340 810 50  0001 C CNN
+	1    10340 810 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 5B41092C
+P 10340 935
+F 0 "#PWR07" H 10340 685 50  0001 C CNN
+F 1 "GND" H 10340 785 50  0000 C CNN
+F 2 "" H 10340 935 50  0001 C CNN
+F 3 "" H 10340 935 50  0001 C CNN
+	1    10340 935 
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 5B410CBF
+P 4200 1030
+F 0 "R5" V 4280 1030 50  0000 C CNN
+F 1 "470" V 4200 1030 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4130 1030 50  0001 C CNN
+F 3 "" H 4200 1030 50  0001 C CNN
+	1    4200 1030
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR08
+U 1 1 5B410DF2
+P 4200 830
+F 0 "#PWR08" H 4200 680 50  0001 C CNN
+F 1 "VCC" H 4200 980 50  0000 C CNN
+F 2 "" H 4200 830 50  0001 C CNN
+F 3 "" H 4200 830 50  0001 C CNN
+	1    4200 830 
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 5B410F2F
+P 4200 1630
+F 0 "R6" V 4280 1630 50  0000 C CNN
+F 1 "390" V 4200 1630 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4130 1630 50  0001 C CNN
+F 3 "" H 4200 1630 50  0001 C CNN
+	1    4200 1630
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2N3904 Q1
+U 1 1 5B411078
+P 4560 1280
+F 0 "Q1" H 4760 1355 50  0000 L CNN
+F 1 "2N3904" H 4760 1280 50  0000 L CNN
+F 2 "OpenAmigaVideoHybrid:2N3904_2N3906_SOT-23" H 4760 1205 50  0001 L CIN
+F 3 "" H 4560 1280 50  0001 L CNN
+	1    4560 1280
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR09
+U 1 1 5B411124
+P 4660 830
+F 0 "#PWR09" H 4660 680 50  0001 C CNN
+F 1 "VDD" H 4660 980 50  0000 C CNN
+F 2 "" H 4660 830 50  0001 C CNN
+F 3 "" H 4660 830 50  0001 C CNN
+	1    4660 830 
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 5B4115BB
+P 4985 1530
+F 0 "R8" V 5065 1530 50  0000 C CNN
+F 1 "75" V 4985 1530 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4915 1530 50  0001 C CNN
+F 3 "" H 4985 1530 50  0001 C CNN
+	1    4985 1530
+	0    1    1    0   
+$EndComp
+$Comp
+L R R7
+U 1 1 5B41165F
+P 4660 1730
+F 0 "R7" V 4740 1730 50  0000 C CNN
+F 1 "75" V 4655 1730 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4590 1730 50  0001 C CNN
+F 3 "" H 4660 1730 50  0001 C CNN
+	1    4660 1730
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 5B41173E
+P 4660 2110
+F 0 "#PWR010" H 4660 1860 50  0001 C CNN
+F 1 "GND" H 4660 1960 50  0000 C CNN
+F 2 "" H 4660 2110 50  0001 C CNN
+F 3 "" H 4660 2110 50  0001 C CNN
+	1    4660 2110
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5B411878
+P 5310 1160
+F 0 "C1" H 5335 1260 50  0000 L CNN
+F 1 "100n" H 5335 1060 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5348 1010 50  0001 C CNN
+F 3 "" H 5310 1160 50  0001 C CNN
+	1    5310 1160
+	1    0    0    -1  
+$EndComp
+Text Label 3015 3160 0    50   ~ 0
+dg3
+Text Label 3015 3260 0    50   ~ 0
+dg2
+Text Label 3015 3360 0    50   ~ 0
+dg1
+Text Label 3015 3460 0    50   ~ 0
+dg0
+Text Label 5460 3410 0    50   ~ 0
+green
+$Comp
+L R R9
+U 1 1 5B413580
+P 3365 3160
+F 0 "R9" V 3325 3325 50  0000 C CNN
+F 1 "1k" V 3365 3160 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3295 3160 50  0001 C CNN
+F 3 "" H 3365 3160 50  0001 C CNN
+	1    3365 3160
+	0    1    1    0   
+$EndComp
+$Comp
+L R R10
+U 1 1 5B413586
+P 3365 3260
+F 0 "R10" V 3325 3445 50  0000 C CNN
+F 1 "2k" V 3365 3260 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3295 3260 50  0001 C CNN
+F 3 "" H 3365 3260 50  0001 C CNN
+	1    3365 3260
+	0    1    1    0   
+$EndComp
+$Comp
+L R R11
+U 1 1 5B41358C
+P 3365 3360
+F 0 "R11" V 3325 3545 50  0000 C CNN
+F 1 "4k" V 3365 3360 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3295 3360 50  0001 C CNN
+F 3 "" H 3365 3360 50  0001 C CNN
+	1    3365 3360
+	0    1    1    0   
+$EndComp
+$Comp
+L R R12
+U 1 1 5B413592
+P 3365 3460
+F 0 "R12" V 3325 3645 50  0000 C CNN
+F 1 "8k" V 3365 3460 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3295 3460 50  0001 C CNN
+F 3 "" H 3365 3460 50  0001 C CNN
+	1    3365 3460
+	0    1    1    0   
+$EndComp
+$Comp
+L R R13
+U 1 1 5B413598
+P 4200 2910
+F 0 "R13" V 4280 2910 50  0000 C CNN
+F 1 "470" V 4200 2910 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4130 2910 50  0001 C CNN
+F 3 "" H 4200 2910 50  0001 C CNN
+	1    4200 2910
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR011
+U 1 1 5B41359E
+P 4200 2710
+F 0 "#PWR011" H 4200 2560 50  0001 C CNN
+F 1 "VCC" H 4200 2860 50  0000 C CNN
+F 2 "" H 4200 2710 50  0001 C CNN
+F 3 "" H 4200 2710 50  0001 C CNN
+	1    4200 2710
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R14
+U 1 1 5B4135A4
+P 4200 3510
+F 0 "R14" V 4280 3510 50  0000 C CNN
+F 1 "390" V 4200 3510 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4130 3510 50  0001 C CNN
+F 3 "" H 4200 3510 50  0001 C CNN
+	1    4200 3510
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2N3904 Q2
+U 1 1 5B4135AA
+P 4560 3160
+F 0 "Q2" H 4760 3235 50  0000 L CNN
+F 1 "2N3904" H 4760 3160 50  0000 L CNN
+F 2 "OpenAmigaVideoHybrid:2N3904_2N3906_SOT-23" H 4760 3085 50  0001 L CIN
+F 3 "" H 4560 3160 50  0001 L CNN
+	1    4560 3160
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR012
+U 1 1 5B4135B0
+P 4660 2710
+F 0 "#PWR012" H 4660 2560 50  0001 C CNN
+F 1 "VDD" H 4660 2860 50  0000 C CNN
+F 2 "" H 4660 2710 50  0001 C CNN
+F 3 "" H 4660 2710 50  0001 C CNN
+	1    4660 2710
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R16
+U 1 1 5B4135DE
+P 4985 3410
+F 0 "R16" V 5065 3410 50  0000 C CNN
+F 1 "75" V 4985 3410 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4915 3410 50  0001 C CNN
+F 3 "" H 4985 3410 50  0001 C CNN
+	1    4985 3410
+	0    1    1    0   
+$EndComp
+$Comp
+L R R15
+U 1 1 5B4135E4
+P 4660 3610
+F 0 "R15" V 4740 3610 50  0000 C CNN
+F 1 "75" V 4655 3610 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4590 3610 50  0001 C CNN
+F 3 "" H 4660 3610 50  0001 C CNN
+	1    4660 3610
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 5B4135EA
+P 4660 3990
+F 0 "#PWR013" H 4660 3740 50  0001 C CNN
+F 1 "GND" H 4660 3840 50  0000 C CNN
+F 2 "" H 4660 3990 50  0001 C CNN
+F 3 "" H 4660 3990 50  0001 C CNN
+	1    4660 3990
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5B4135F0
+P 5310 3040
+F 0 "C2" H 5335 3140 50  0000 L CNN
+F 1 "100n" H 5335 2940 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5348 2890 50  0001 C CNN
+F 3 "" H 5310 3040 50  0001 C CNN
+	1    5310 3040
+	1    0    0    -1  
+$EndComp
+Text Label 3015 4990 0    50   ~ 0
+db3
+Text Label 3015 5090 0    50   ~ 0
+db2
+Text Label 3015 5190 0    50   ~ 0
+db1
+Text Label 3015 5290 0    50   ~ 0
+db0
+Text Label 5510 5240 0    50   ~ 0
+blue
+$Comp
+L R R17
+U 1 1 5B414695
+P 3365 4990
+F 0 "R17" V 3325 5175 50  0000 C CNN
+F 1 "1k" V 3365 4990 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3295 4990 50  0001 C CNN
+F 3 "" H 3365 4990 50  0001 C CNN
+	1    3365 4990
+	0    1    1    0   
+$EndComp
+$Comp
+L R R18
+U 1 1 5B41469B
+P 3365 5090
+F 0 "R18" V 3325 5275 50  0000 C CNN
+F 1 "2k" V 3365 5090 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3295 5090 50  0001 C CNN
+F 3 "" H 3365 5090 50  0001 C CNN
+	1    3365 5090
+	0    1    1    0   
+$EndComp
+$Comp
+L R R19
+U 1 1 5B4146A1
+P 3365 5190
+F 0 "R19" V 3325 5375 50  0000 C CNN
+F 1 "4k" V 3365 5190 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3295 5190 50  0001 C CNN
+F 3 "" H 3365 5190 50  0001 C CNN
+	1    3365 5190
+	0    1    1    0   
+$EndComp
+$Comp
+L R R20
+U 1 1 5B4146A7
+P 3365 5290
+F 0 "R20" V 3325 5475 50  0000 C CNN
+F 1 "8k" V 3365 5290 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3295 5290 50  0001 C CNN
+F 3 "" H 3365 5290 50  0001 C CNN
+	1    3365 5290
+	0    1    1    0   
+$EndComp
+$Comp
+L R R21
+U 1 1 5B4146AD
+P 4200 4740
+F 0 "R21" V 4280 4740 50  0000 C CNN
+F 1 "470" V 4200 4740 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4130 4740 50  0001 C CNN
+F 3 "" H 4200 4740 50  0001 C CNN
+	1    4200 4740
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR014
+U 1 1 5B4146B3
+P 4200 4540
+F 0 "#PWR014" H 4200 4390 50  0001 C CNN
+F 1 "VCC" H 4200 4690 50  0000 C CNN
+F 2 "" H 4200 4540 50  0001 C CNN
+F 3 "" H 4200 4540 50  0001 C CNN
+	1    4200 4540
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R22
+U 1 1 5B4146B9
+P 4200 5340
+F 0 "R22" V 4280 5340 50  0000 C CNN
+F 1 "390" V 4200 5340 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4130 5340 50  0001 C CNN
+F 3 "" H 4200 5340 50  0001 C CNN
+	1    4200 5340
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2N3904 Q3
+U 1 1 5B4146BF
+P 4560 4990
+F 0 "Q3" H 4760 5065 50  0000 L CNN
+F 1 "2N3904" H 4760 4990 50  0000 L CNN
+F 2 "OpenAmigaVideoHybrid:2N3904_2N3906_SOT-23" H 4760 4915 50  0001 L CIN
+F 3 "" H 4560 4990 50  0001 L CNN
+	1    4560 4990
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR015
+U 1 1 5B4146C5
+P 4660 4540
+F 0 "#PWR015" H 4660 4390 50  0001 C CNN
+F 1 "VDD" H 4660 4690 50  0000 C CNN
+F 2 "" H 4660 4540 50  0001 C CNN
+F 3 "" H 4660 4540 50  0001 C CNN
+	1    4660 4540
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R24
+U 1 1 5B4146F3
+P 4985 5240
+F 0 "R24" V 5065 5240 50  0000 C CNN
+F 1 "75" V 4985 5240 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4915 5240 50  0001 C CNN
+F 3 "" H 4985 5240 50  0001 C CNN
+	1    4985 5240
+	0    1    1    0   
+$EndComp
+$Comp
+L R R23
+U 1 1 5B4146F9
+P 4660 5440
+F 0 "R23" V 4740 5440 50  0000 C CNN
+F 1 "75" V 4655 5440 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4590 5440 50  0001 C CNN
+F 3 "" H 4660 5440 50  0001 C CNN
+	1    4660 5440
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 5B4146FF
+P 4660 5820
+F 0 "#PWR016" H 4660 5570 50  0001 C CNN
+F 1 "GND" H 4660 5670 50  0000 C CNN
+F 2 "" H 4660 5820 50  0001 C CNN
+F 3 "" H 4660 5820 50  0001 C CNN
+	1    4660 5820
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5B414705
+P 5310 4870
+F 0 "C3" H 5335 4970 50  0000 L CNN
+F 1 "100n" H 5335 4770 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5348 4720 50  0001 C CNN
+F 3 "" H 5310 4870 50  0001 C CNN
+	1    5310 4870
+	1    0    0    -1  
+$EndComp
+Text Label 9585 5240 0    50   ~ 0
+comp
+$Comp
+L R R31
+U 1 1 5B419F29
+P 7010 5190
+F 0 "R31" V 6970 5375 50  0000 C CNN
+F 1 "37.4k" V 7010 5190 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6940 5190 50  0001 C CNN
+F 3 "" H 7010 5190 50  0001 C CNN
+	1    7010 5190
+	0    1    1    0   
+$EndComp
+$Comp
+L R R32
+U 1 1 5B419F2F
+P 7010 5290
+F 0 "R32" V 6970 5475 50  0000 C CNN
+F 1 "13.3k" V 7010 5290 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6940 5290 50  0001 C CNN
+F 3 "" H 7010 5290 50  0001 C CNN
+	1    7010 5290
+	0    1    1    0   
+$EndComp
+$Comp
+L R R33
+U 1 1 5B419F35
+P 7010 5390
+F 0 "R33" V 6970 5575 50  0000 C CNN
+F 1 "6.04k" V 7010 5390 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6940 5390 50  0001 C CNN
+F 3 "" H 7010 5390 50  0001 C CNN
+	1    7010 5390
+	0    1    1    0   
+$EndComp
+$Comp
+L R R34
+U 1 1 5B419F3B
+P 7010 5490
+F 0 "R34" V 6970 5675 50  0000 C CNN
+F 1 "37.4k" V 7010 5490 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6940 5490 50  0001 C CNN
+F 3 "" H 7010 5490 50  0001 C CNN
+	1    7010 5490
+	0    1    1    0   
+$EndComp
+$Comp
+L R R36
+U 1 1 5B419F41
+P 8320 4635
+F 0 "R36" V 8400 4635 50  0000 C CNN
+F 1 "220" V 8320 4635 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8250 4635 50  0001 C CNN
+F 3 "" H 8320 4635 50  0001 C CNN
+	1    8320 4635
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR017
+U 1 1 5B419F47
+P 7420 4540
+F 0 "#PWR017" H 7420 4390 50  0001 C CNN
+F 1 "VCC" H 7420 4690 50  0000 C CNN
+F 2 "" H 7420 4540 50  0001 C CNN
+F 3 "" H 7420 4540 50  0001 C CNN
+	1    7420 4540
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2N3904 Q5
+U 1 1 5B419F53
+P 7790 5190
+F 0 "Q5" H 7990 5265 50  0000 L CNN
+F 1 "2N3904" H 7990 5190 50  0000 L CNN
+F 2 "OpenAmigaVideoHybrid:2N3904_2N3906_SOT-23" H 7990 5115 50  0001 L CIN
+F 3 "" H 7790 5190 50  0001 L CNN
+	1    7790 5190
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR018
+U 1 1 5B419F59
+P 8780 4360
+F 0 "#PWR018" H 8780 4210 50  0001 C CNN
+F 1 "VDD" H 8780 4510 50  0000 C CNN
+F 2 "" H 8780 4360 50  0001 C CNN
+F 3 "" H 8780 4360 50  0001 C CNN
+	1    8780 4360
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R39
+U 1 1 5B419F86
+P 9105 5240
+F 0 "R39" V 9185 5240 50  0000 C CNN
+F 1 "75" V 9105 5240 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9035 5240 50  0001 C CNN
+F 3 "" H 9105 5240 50  0001 C CNN
+	1    9105 5240
+	0    1    1    0   
+$EndComp
+$Comp
+L R R37
+U 1 1 5B419F8C
+P 8780 5440
+F 0 "R37" V 8860 5440 50  0000 C CNN
+F 1 "36" V 8775 5440 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8710 5440 50  0001 C CNN
+F 3 "" H 8780 5440 50  0001 C CNN
+	1    8780 5440
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR019
+U 1 1 5B419F92
+P 8780 6170
+F 0 "#PWR019" H 8780 5920 50  0001 C CNN
+F 1 "GND" H 8780 6020 50  0000 C CNN
+F 2 "" H 8780 6170 50  0001 C CNN
+F 3 "" H 8780 6170 50  0001 C CNN
+	1    8780 6170
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 5B419F98
+P 9430 4765
+F 0 "C5" H 9455 4865 50  0000 L CNN
+F 1 "100n" H 9455 4665 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9468 4615 50  0001 C CNN
+F 3 "" H 9430 4765 50  0001 C CNN
+	1    9430 4765
+	1    0    0    -1  
+$EndComp
+Text Label 9160 3410 0    50   ~ 0
+sync
+$Comp
+L R R25
+U 1 1 5B41C2D5
+P 7860 2910
+F 0 "R25" V 7940 2910 50  0000 C CNN
+F 1 "1k" V 7860 2910 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7790 2910 50  0001 C CNN
+F 3 "" H 7860 2910 50  0001 C CNN
+	1    7860 2910
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR020
+U 1 1 5B41C2DB
+P 7860 2710
+F 0 "#PWR020" H 7860 2560 50  0001 C CNN
+F 1 "VCC" H 7860 2860 50  0000 C CNN
+F 2 "" H 7860 2710 50  0001 C CNN
+F 3 "" H 7860 2710 50  0001 C CNN
+	1    7860 2710
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R27
+U 1 1 5B41C2E1
+P 7860 3510
+F 0 "R27" V 7940 3510 50  0000 C CNN
+F 1 "27k" V 7860 3510 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7790 3510 50  0001 C CNN
+F 3 "" H 7860 3510 50  0001 C CNN
+	1    7860 3510
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2N3904 Q4
+U 1 1 5B41C2E7
+P 8220 3160
+F 0 "Q4" H 8420 3235 50  0000 L CNN
+F 1 "2N3904" H 8420 3160 50  0000 L CNN
+F 2 "OpenAmigaVideoHybrid:2N3904_2N3906_SOT-23" H 8420 3085 50  0001 L CIN
+F 3 "" H 8220 3160 50  0001 L CNN
+	1    8220 3160
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR021
+U 1 1 5B41C2ED
+P 8320 2710
+F 0 "#PWR021" H 8320 2560 50  0001 C CNN
+F 1 "VDD" H 8320 2860 50  0000 C CNN
+F 2 "" H 8320 2710 50  0001 C CNN
+F 3 "" H 8320 2710 50  0001 C CNN
+	1    8320 2710
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R29
+U 1 1 5B41C316
+P 8645 3410
+F 0 "R29" V 8725 3410 50  0000 C CNN
+F 1 "75" V 8645 3410 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8575 3410 50  0001 C CNN
+F 3 "" H 8645 3410 50  0001 C CNN
+	1    8645 3410
+	0    1    1    0   
+$EndComp
+$Comp
+L R R28
+U 1 1 5B41C31C
+P 8320 3610
+F 0 "R28" V 8400 3610 50  0000 C CNN
+F 1 "150" V 8315 3610 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8250 3610 50  0001 C CNN
+F 3 "" H 8320 3610 50  0001 C CNN
+	1    8320 3610
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR022
+U 1 1 5B41C322
+P 8320 3990
+F 0 "#PWR022" H 8320 3740 50  0001 C CNN
+F 1 "GND" H 8320 3840 50  0000 C CNN
+F 2 "" H 8320 3990 50  0001 C CNN
+F 3 "" H 8320 3990 50  0001 C CNN
+	1    8320 3990
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 5B41C328
+P 8970 3040
+F 0 "C4" H 8995 3140 50  0000 L CNN
+F 1 "100n" H 8995 2940 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9008 2890 50  0001 C CNN
+F 3 "" H 8970 3040 50  0001 C CNN
+	1    8970 3040
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R26
+U 1 1 5B41F278
+P 7410 3160
+F 0 "R26" V 7490 3160 50  0000 C CNN
+F 1 "220" V 7410 3160 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7340 3160 50  0001 C CNN
+F 3 "" H 7410 3160 50  0001 C CNN
+	1    7410 3160
+	0    1    1    0   
+$EndComp
+$Comp
+L 2N3906 Q6
+U 1 1 5B4217E4
+P 8680 4885
+F 0 "Q6" H 8880 4960 50  0000 L CNN
+F 1 "2N3906" H 8880 4885 50  0000 L CNN
+F 2 "OpenAmigaVideoHybrid:2N3904_2N3906_SOT-23" H 8880 4810 50  0001 L CIN
+F 3 "" H 8680 4885 50  0001 L CNN
+	1    8680 4885
+	1    0    0    1   
+$EndComp
+$Comp
+L R R30
+U 1 1 5B423215
+P 7420 4740
+F 0 "R30" V 7500 4740 50  0000 C CNN
+F 1 "90.9k" V 7420 4740 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7350 4740 50  0001 C CNN
+F 3 "" H 7420 4740 50  0001 C CNN
+	1    7420 4740
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R38
+U 1 1 5B425A5C
+P 8780 5920
+F 0 "R38" V 8860 5920 50  0000 C CNN
+F 1 "36" V 8780 5920 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8710 5920 50  0001 C CNN
+F 3 "" H 8780 5920 50  0001 C CNN
+	1    8780 5920
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10855 935  10855 805 
+Wire Wire Line
+	10340 935  10340 810 
+Wire Wire Line
+	1245 2460 1895 2460
+Wire Wire Line
+	1245 2560 1895 2560
+Wire Wire Line
+	1245 2660 1895 2660
+Wire Wire Line
+	1245 2760 1895 2760
+Wire Wire Line
+	1245 2860 1895 2860
+Wire Wire Line
+	1245 2960 1895 2960
+Wire Wire Line
+	1245 3060 1895 3060
+Wire Wire Line
+	1245 3160 1895 3160
+Wire Wire Line
+	1245 3260 1895 3260
+Wire Wire Line
+	1245 3360 1895 3360
+Wire Wire Line
+	1245 3460 1895 3460
+Wire Wire Line
+	1245 3560 1895 3560
+Wire Wire Line
+	1245 3660 1895 3660
+Wire Wire Line
+	1245 3760 1895 3760
+Wire Wire Line
+	1245 3860 1895 3860
+Wire Wire Line
+	1245 3960 1895 3960
+Wire Wire Line
+	1245 4060 1895 4060
+Wire Wire Line
+	1245 4160 1895 4160
+Wire Wire Line
+	1245 4260 1895 4260
+Wire Wire Line
+	1245 4360 1895 4360
+Wire Wire Line
+	1245 4460 1895 4460
+Wire Wire Line
+	1245 4560 1895 4560
+Wire Wire Line
+	1345 2460 1345 4760
+Connection ~ 1345 2460
+Connection ~ 1345 4560
+Wire Wire Line
+	1470 2360 1470 4460
+Connection ~ 1470 4460
+Wire Wire Line
+	1620 2560 1620 2360
+Connection ~ 1620 2560
+Wire Wire Line
+	3215 1280 3015 1280
+Wire Wire Line
+	3215 1380 3015 1380
+Wire Wire Line
+	3215 1480 3015 1480
+Wire Wire Line
+	3215 1580 3015 1580
+Wire Wire Line
+	3515 1280 4360 1280
+Wire Wire Line
+	3515 1380 3770 1380
+Connection ~ 3770 1380
+Wire Wire Line
+	3770 1480 3515 1480
+Connection ~ 3770 1480
+Wire Wire Line
+	3770 1580 3515 1580
+Connection ~ 3770 1580
+Connection ~ 3770 1280
+Wire Wire Line
+	4660 1480 4660 1580
+Wire Wire Line
+	4660 1530 4835 1530
+Connection ~ 4660 1530
+Wire Wire Line
+	4200 830  4200 880 
+Wire Wire Line
+	4660 830  4660 1080
+Wire Wire Line
+	4660 905  5310 905 
+Wire Wire Line
+	5310 905  5310 1010
+Connection ~ 4660 905 
+Wire Wire Line
+	5310 1980 5310 1310
+Wire Wire Line
+	4660 1880 4660 2110
+Wire Wire Line
+	4200 1780 4200 1980
+Wire Wire Line
+	4200 1980 5310 1980
+Connection ~ 4660 1980
+Wire Wire Line
+	4200 1180 4200 1480
+Connection ~ 4200 1280
+Wire Wire Line
+	5135 1530 5660 1530
+Wire Wire Line
+	3215 3160 3015 3160
+Wire Wire Line
+	3215 3260 3015 3260
+Wire Wire Line
+	3215 3360 3015 3360
+Wire Wire Line
+	3215 3460 3015 3460
+Wire Wire Line
+	3515 3160 4360 3160
+Wire Wire Line
+	3515 3260 3770 3260
+Wire Wire Line
+	3770 3160 3770 3460
+Connection ~ 3770 3260
+Wire Wire Line
+	3770 3360 3515 3360
+Connection ~ 3770 3160
+Wire Wire Line
+	4660 3360 4660 3460
+Wire Wire Line
+	4660 3410 4835 3410
+Connection ~ 4660 3410
+Wire Wire Line
+	4200 2710 4200 2760
+Wire Wire Line
+	4660 2710 4660 2960
+Wire Wire Line
+	4660 2785 5310 2785
+Wire Wire Line
+	5310 2785 5310 2890
+Connection ~ 4660 2785
+Wire Wire Line
+	5310 3860 5310 3190
+Wire Wire Line
+	4660 3760 4660 3990
+Wire Wire Line
+	4200 3660 4200 3860
+Wire Wire Line
+	4200 3860 5310 3860
+Connection ~ 4660 3860
+Wire Wire Line
+	4200 3060 4200 3360
+Connection ~ 4200 3160
+Wire Wire Line
+	5135 3410 5660 3410
+Wire Wire Line
+	3215 4990 3015 4990
+Wire Wire Line
+	3215 5090 3015 5090
+Wire Wire Line
+	3215 5190 3015 5190
+Wire Wire Line
+	3215 5290 3015 5290
+Wire Wire Line
+	3515 4990 4360 4990
+Wire Wire Line
+	3515 5090 3770 5090
+Wire Wire Line
+	3770 4990 3770 6330
+Connection ~ 3770 5090
+Wire Wire Line
+	3770 5190 3515 5190
+Connection ~ 3770 5190
+Wire Wire Line
+	3770 5290 3515 5290
+Connection ~ 3770 5290
+Connection ~ 3770 4990
+Wire Wire Line
+	4660 5190 4660 5290
+Wire Wire Line
+	4660 5240 4835 5240
+Connection ~ 4660 5240
+Wire Wire Line
+	4200 4540 4200 4590
+Wire Wire Line
+	4660 4540 4660 4790
+Wire Wire Line
+	4660 4615 5310 4615
+Wire Wire Line
+	5310 4615 5310 4720
+Connection ~ 4660 4615
+Wire Wire Line
+	5310 5690 5310 5020
+Wire Wire Line
+	4660 5590 4660 5820
+Wire Wire Line
+	4200 5490 4200 5690
+Wire Wire Line
+	4200 5690 5310 5690
+Connection ~ 4660 5690
+Wire Wire Line
+	4200 4890 4200 5190
+Connection ~ 4200 4990
+Wire Wire Line
+	5135 5240 5660 5240
+Connection ~ 3770 3360
+Connection ~ 3770 3460
+Wire Wire Line
+	3770 3460 3515 3460
+Wire Wire Line
+	7160 5190 7590 5190
+Wire Wire Line
+	8320 4885 8480 4885
+Wire Wire Line
+	7420 5290 7160 5290
+Wire Wire Line
+	7420 4890 7420 5770
+Connection ~ 7420 5290
+Wire Wire Line
+	7420 5390 7160 5390
+Connection ~ 7420 5390
+Wire Wire Line
+	7420 5490 7160 5490
+Connection ~ 7420 5190
+Wire Wire Line
+	8780 5085 8780 5290
+Wire Wire Line
+	8780 5240 8955 5240
+Connection ~ 8780 5240
+Wire Wire Line
+	8320 4435 8320 4485
+Wire Wire Line
+	8320 4435 9430 4435
+Wire Wire Line
+	9430 4435 9430 4615
+Connection ~ 8780 4435
+Wire Wire Line
+	9430 6130 9430 4915
+Wire Wire Line
+	8780 6070 8780 6170
+Connection ~ 8780 5690
+Wire Wire Line
+	8320 4785 8320 4885
+Connection ~ 8320 4885
+Wire Wire Line
+	9255 5240 9780 5240
+Wire Wire Line
+	8320 3360 8320 3460
+Wire Wire Line
+	8320 3410 8495 3410
+Connection ~ 8320 3410
+Wire Wire Line
+	7860 2710 7860 2760
+Wire Wire Line
+	8320 2710 8320 2960
+Wire Wire Line
+	8320 2785 8970 2785
+Wire Wire Line
+	8970 2785 8970 2890
+Connection ~ 8320 2785
+Wire Wire Line
+	8970 3860 8970 3190
+Wire Wire Line
+	8320 3760 8320 3990
+Wire Wire Line
+	7860 3660 7860 3860
+Wire Wire Line
+	7860 3860 8970 3860
+Connection ~ 8320 3860
+Wire Wire Line
+	7860 3060 7860 3360
+Connection ~ 7860 3160
+Wire Wire Line
+	7560 3160 8020 3160
+Wire Wire Line
+	8795 3410 9320 3410
+Wire Wire Line
+	6480 3160 6480 5190
+Wire Wire Line
+	6185 3160 7260 3160
+Wire Wire Line
+	7420 4590 7420 4540
+Wire Wire Line
+	8780 4360 8780 4685
+Wire Wire Line
+	8780 5590 8780 5770
+Wire Wire Line
+	6480 5190 6860 5190
+Connection ~ 6480 3160
+Text Label 6185 3160 0    60   ~ 0
+csync
+Wire Wire Line
+	3770 6330 6480 6330
+Wire Wire Line
+	6480 6330 6480 5490
+Wire Wire Line
+	6480 5490 6860 5490
+Wire Wire Line
+	6860 5390 6400 5390
+Wire Wire Line
+	6400 5390 6400 6260
+Wire Wire Line
+	6400 6260 3850 6260
+Wire Wire Line
+	3850 6260 3850 3160
+Connection ~ 3850 3160
+Wire Wire Line
+	6860 5290 6320 5290
+Wire Wire Line
+	6320 5290 6320 6190
+Wire Wire Line
+	6320 6190 3930 6190
+Wire Wire Line
+	3930 6190 3930 1280
+Connection ~ 3930 1280
+Connection ~ 1470 2560
+Wire Wire Line
+	3770 1280 3770 1580
+Wire Notes Line
+	670  1670 2180 1670
+Wire Notes Line
+	2180 1670 2180 5220
+Wire Notes Line
+	2180 5220 670  5220
+Wire Notes Line
+	670  5220 670  1670
+Text Notes 1110 1870 0    60   ~ 0
+SIP22 Pinout
+$Comp
+L R R35
+U 1 1 5B419F4D
+P 7420 5920
+F 0 "R35" V 7500 5920 50  0000 C CNN
+F 1 "19.6k" V 7420 5920 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7350 5920 50  0001 C CNN
+F 3 "" H 7420 5920 50  0001 C CNN
+	1    7420 5920
+	1    0    0    -1  
+$EndComp
+Connection ~ 7420 5490
+Wire Wire Line
+	7420 6070 7420 6130
+Wire Wire Line
+	7420 6130 9430 6130
+Connection ~ 8780 6130
+Wire Wire Line
+	7890 5390 7890 5690
+Wire Wire Line
+	7890 5690 8780 5690
+$Comp
+L Conn_01x01 J99
+U 1 1 5B416382
+P 11015 6255
+F 0 "J99" H 11015 6355 50  0000 C CNN
+F 1 "OSHW_LOGO" H 11015 6155 50  0000 C CNN
+F 2 "w_logo:Logo_copper_OSHW_6x6mm" H 11015 6255 50  0001 C CNN
+F 3 "" H 11015 6255 50  0001 C CNN
+	1    11015 6255
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8325 4885 7890 4885
+Wire Wire Line
+	7890 4885 7890 4990
+NoConn ~ 11015 6055
+$EndSCHEMATC
