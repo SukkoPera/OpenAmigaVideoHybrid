@@ -1,5 +1,5 @@
 # OpenAmigaVideoHybrid
-OpenAmigaVideoHybrid is an Open Hardware implementation of the Video Hybrid integrated circuit used in some Commodore Amiga computers.
+OpenAmigaVideoHybrid is an Open Hardware implementation of the Video Hybrid integrated circuit used in some Commodore Amiga computers (Commodore Part No. 390229-0x).
 
 ![Board](https://raw.githubusercontent.com/SukkoPera/OpenAmigaVideoHybrid/master/doc/render-top.png)
 
@@ -32,8 +32,8 @@ The tables below lists the component values originally used by Commodore, along 
 |--------------------------------------|------------|---------|------|------------|
 |R1, R9, R17, R25                      |1k          |1k       |1k    |1k          |
 |R2, R10, R18                          |2k          |2k       |2k    |2k          |
-|R3, R11, R19                          |4k          |4k       |3.9k**|8.2k\|\|8.2k|
-|R4, R12, R20                          |8k          |8k       |8.2k**|8.2k        |
+|R3, R11, R19\*\*                      |4k          |4k       |3.9k  |8.2k\|\|8.2k|
+|R4, R12, R20\*\*                      |8k          |8k       |8.2k  |8.2k        |
 |R5, R13, R21                          |470         |470      |470   |470         |
 |R6, R14, R22                          |390         |390      |390   |390         |
 |R7, R8, R15, R16, R23, R24, R29, R39\*|75          |75       |75    |75          |
@@ -48,7 +48,7 @@ The tables below lists the component values originally used by Commodore, along 
 |R35\*                                 |3.9k        |19.6k    |20k   |22k         |
 |R36\*                                 |120         |270      |220   |220         |
 |R37\*, R38\*                          |36          |36       |36    |75\|\|75    |
-|**Different Parts Count**             |17          |17       |16    |11          |
+|**Different Parts Count**             |**17**      |**17**   |**16**|**11**      |
 
 |Other Components                    |Value   |
 |------------------------------------|--------|
@@ -59,8 +59,8 @@ The tables below lists the component values originally used by Commodore, along 
 Notes:
 - To achieve the highest video quality, it is strongly recommended to **use resistors with 1% tolerance** (or less) everywhere.
 - Components marked with a single asterisk\* are only used by the circuit that generates the composite video signal. Since most of the original resistor values are uncommon, and since I don't think anybody really uses the composite output at all, I would just recommend not to mount these parts. If you really care for the (monochrome!) composite output, I wouldn't bother hunting down the correct parts and would just use the approximate values from the E24 series: they might produce a signal that is out-of-standard and that might blow your TV (I take no responsibility, use at your own risk!), but my tests show that they yield a decent image that can still be used for whatever a monochrome output can be useful for. Finally, note that all of these components (and only them!) have been grouped on the back side of the board for quick identification.
-- *In theory*, values marked with two asterisks** are crucial for a precise and coherent conversion of color data from digital to analog, therefore it should be recommended to stay as close as possible to the original values used by Commodore, encouraging the usage of 4.02k and 8.06k resistors (properly from the E96 series). *In practice*, my eye can't see any apparent differences when using the values from the E24 series.
-- Values listed in the *Sukko's* column are those that I actually use, in order to cut component costs and the number of different components. \|\| means "parallel", i.e.: just solder two resistors one over the other. These values work fine with my TV and yield results that are satifactory for me, but they might produce a signal that is out-of-standard and that might blow your TV. Again, I take no responsibility, use at your own risk!
+- *In theory*, components marked with two asterisks** are crucial for a precise and coherent conversion of color data from digital to analog, therefore it should be recommended to stay as close as possible to the original values used by Commodore, encouraging the usage of 4.02k and 8.06k resistors (properly from the E96 series). *In practice*, my eye can't see any apparent differences when using the indicated values from the E24 series.
+- Values listed in the *Sukko's* column are those that I actually use, in order to cut component costs and the number of different components. The \|\| symbol means "parallel", i.e.: just solder two resistors one over the other. These values work fine with my TV and yield results that are satifactory for me, but they might produce a signal that is out-of-standard and that might blow your TV. Again, I take no responsibility, use at your own risk!
 
 ### Installation
 You can mount OpenAmigaVideoHybrid in vertical as the original Video Hybrid by using 90-degree pin headers, but I recommend using a different approach:
@@ -90,7 +90,7 @@ If you need help or have questions, you can join [the official Telegram group](h
 
 
 ### Thanks
-- The PCB layout was initially inspired by kipper2k's version of this board.
+- The PCB layout was initially inspired by [kipper2k's Video Hybrid Replacement](http://eab.abime.net/showthread.php?t=68311).
 - This page contains a lot of content translated from [amigawiki](http://www.amigawiki.de/doku.php?id=de:parts:vidiot).
 - [A good tutorial on DAC architectures](http://www.circuitstoday.com/digital-to-analog-converters-da) helped me to get a better understanding of DACs.
 - [This](http://logwell.com/tech/components/resistor_values.html) helped me understand the rationale behind the actual resistor values available on the market.
