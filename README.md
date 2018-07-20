@@ -65,8 +65,8 @@ Notes:
 ### Installation
 You can mount OpenAmigaVideoHybrid in vertical as the original Video Hybrid by using 90-degree pin headers, but I recommend using a different approach:
 - Remove your original Video Hybrid, taking care not to lift any traces.
-- Install a row of female *machined header pins*: these will allow you to install again an original Commodore Video Hybrid, should you want to, and it will fit snugly.
-- Solder a row of male *machined header pins* to your OpenAmigaVideoHybrid: now it will also fit just as snugly and rest just above the output video buffer chips, without touching them and ensuring sufficient heat dissipation.
+- Install a row of [female *machined header pins*](https://raw.githubusercontent.com/SukkoPera/OpenAmigaVideoHybrid/master/doc/round_pin_headers_female.jpg): these will allow you to install again an original Commodore Video Hybrid, should you want to, and [it will fit snugly](https://raw.githubusercontent.com/SukkoPera/OpenAmigaVideoHybrid/master/doc/original_socketed.jpg).
+- Solder a row of [male *machined header pins*](https://raw.githubusercontent.com/SukkoPera/OpenAmigaVideoHybrid/master/doc/round_pin_headers_male.jpg) to your OpenAmigaVideoHybrid: now [it will also fit just as snugly](https://raw.githubusercontent.com/SukkoPera/OpenAmigaVideoHybrid/master/doc/oavh_installed.jpg) and rest just above the output video buffer chips, without touching them and ensuring sufficient heat dissipation.
 
 ### License
 OpenAmigaVideoHybrid is Open Hardware. If you make any modifications to the board, please contribute them back.
