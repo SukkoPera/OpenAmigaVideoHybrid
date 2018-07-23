@@ -28,38 +28,39 @@ What this all means is that newer designs should use different values that are c
 
 The tables below lists the component values originally used by Commodore, along with some alternative values readily available in the E24 series, which is common and cheap today. Another column shows the values I actually use.
 
-|Resistors                             |390229-01/02|390229-03|E24   |Sukko's     |
-|--------------------------------------|------------|---------|------|------------|
-|R1, R9, R17, R25                      |1k          |1k       |1k    |1k          |
-|R2, R10, R18                          |2k          |2k       |2k    |2k          |
-|R3\*\*, R11\*\*, R19\*\*              |4k          |4k       |3.9k  |8.2k\|\|8.2k|
-|R4\*\*, R12\*\*, R20\*\*              |8k          |8k       |8.2k  |8.2k        |
-|R5, R13, R21                          |470         |470      |470   |470         |
-|R6, R14, R22                          |390         |390      |390   |390         |
-|R7, R8, R15, R16, R23, R24, R29, R39\*|75          |75       |75    |75          |
-|R26                                   |220         |220      |220   |220         |
-|R27                                   |27k         |27k      |27k   |22k         |
-|R28                                   |150         |150      |150   |220         |
-|R30\*                                 |18k         |90.9k    |91k   |100k        |
-|R31\*                                 |7.5k        |37.4k    |62k   |68k         |
-|R32\*                                 |2.7k        |13.3k    |22k   |22k         |
-|R33\*                                 |1.2k        |6.04k    |10k   |22k\|\|22k  |
-|R34\*                                 |7.5k        |37.4k    |62k   |68k         |
-|R35\*                                 |3.9k        |19.6k    |20k   |22k         |
-|R36\*                                 |120         |270      |220   |220         |
-|R37\*, R38\*                          |36          |36       |36    |75\|\|75    |
-|**Different Parts Count**             |**17**      |**17**   |**16**|**11**      |
+|Resistors                                     |390229-01/02|390229-03|E24   |Sukko's     |
+|----------------------------------------------|------------|---------|------|------------|
+|R1, R9, R17, R25\*\*                          |1k          |1k       |1k    |1k          |
+|R2, R10, R18                                  |2k          |2k       |2k    |2k          |
+|R3\*, R11\*, R19\*                            |4k          |4k       |3.9k  |8.2k\|\|8.2k|
+|R4\*, R12\*, R20\*                            |8k          |8k       |8.2k  |8.2k        |
+|R5, R13, R21                                  |470         |470      |470   |470         |
+|R6, R14, R22                                  |390         |390      |390   |390         |
+|R7, R8, R15, R16, R23, R24, R29\*\*, R39\*\*\*|75          |75       |75    |75          |
+|R26\*\*                                       |220         |220      |220   |220         |
+|R27\*\*                                       |27k         |27k      |27k   |22k         |
+|R28\*\*                                       |150         |150      |150   |220         |
+|R30\*\*\*                                     |18k         |90.9k    |91k   |100k        |
+|R31\*\*\*                                     |7.5k        |37.4k    |62k   |68k         |
+|R32\*\*\*                                     |2.7k        |13.3k    |22k   |22k         |
+|R33\*\*\*                                     |1.2k        |6.04k    |10k   |22k\|\|22k  |
+|R34\*\*\*                                     |7.5k        |37.4k    |62k   |68k         |
+|R35\*\*\*                                     |3.9k        |19.6k    |20k   |22k         |
+|R36\*\*\*                                     |120         |270      |220   |220         |
+|R37\*\*\*, R38\*\*\*                          |36          |36       |36    |75\|\|75    |
+|**Different Parts Count**                     |**17**      |**17**   |**16**|**11**      |
 
 |Other Components                    |Value   |
 |------------------------------------|--------|
-|C1, C2, C3, C4, C5, C5\*            |100nF   |
-|Q1, Q2, Q3, Q4, Q5\*                |MMBT3904|
-|Q6\*                                |MMBT3906|
+|C1, C2, C3, C4\*\*, C5\*\*\*        |100nF   |
+|Q1, Q2, Q3, Q4\*\*, Q5\*\*\*        |MMBT3904|
+|Q6\*\*\*                            |MMBT3906|
 
 Notes:
 - To achieve the highest video quality, it is strongly recommended to **use resistors with 1% tolerance** (or less) everywhere.
-- Components marked with a single asterisk\* are only used by the circuit that generates the composite video signal. Since most of the original resistor values are uncommon, and since I don't think anybody really uses the composite output at all, I would just recommend not to mount these parts. If you really care for the (monochrome!) composite output, I wouldn't bother hunting down the correct parts and would just use the approximate values from the E24 series: they might produce a signal that is out-of-standard and that might blow your TV (I take no responsibility, use at your own risk!), but my tests show that they yield a decent image that can still be used for whatever a monochrome output can be useful for. Finally, note that all of these components (and only them!) have been grouped on the back side of the board for quick identification.
-- *In theory*, components marked with two asterisks** are crucial for a precise and coherent conversion of color data from digital to analog, therefore it should be recommended to stay as close as possible to the original values used by Commodore, encouraging the usage of 4.02k and 8.06k resistors (properly from the E96 series). *In practice*, my eye can't see any apparent differences when using the indicated values from the E24 series.
+- *In theory*, components marked with a single asterisk* are crucial for a precise and coherent conversion of color data from digital to analog, therefore it should be recommended to stay as close as possible to the original values used by Commodore, encouraging the usage of 4.02k and 8.06k resistors (properly from the E96 series). *In practice*, my eye can't see any apparent differences when using the indicated values from the E24 series.
+- Components marked with two asterisks\*\* are only used by the circuit that amplifies the synchronization signal. Normally, Amigas bring to the video connector only the raw, unamplified signal, making this circuit, and thus these components, totally useless. This is the case, for instance, on Rev. 5 boards, where the signal is unrouted. On Rev. 8A boards, the amplified and unamplified signals are brought to a jumper pad (JP11), which by default connects the unamplified signal. I'm currently not sure on what other mainboard revisions do, but there's a good chance that you can get away without mounting these components at all.
+- Components marked with three asterisks\*\*\* are only used by the circuit that generates the composite video signal. Since most of the original resistor values are uncommon, and since I don't think anybody really uses the composite output at all, I would just recommend not to mount these parts. If you really care for the (monochrome!) composite output, I wouldn't bother hunting down the correct parts and would just use the approximate values from the E24 series: they might produce a signal that is out-of-standard and that might blow your TV (I take no responsibility, use at your own risk!), but my tests show that they yield a decent image that can still be used for whatever a monochrome output can be useful for. Finally, note that all of these components (and only them!) have been grouped on the back side of the board for quick identification.
 - Values listed in the *Sukko's* column are those that I actually use, in order to cut component costs and the number of different components. The \|\| symbol means "parallel", i.e.: just solder two resistors one over the other. These values work fine with my TV and yield results that are satifactory for me, but they might produce a signal that is out-of-standard and that might blow your TV. Again, I take no responsibility, use at your own risk!
 
 ### Installation
