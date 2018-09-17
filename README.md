@@ -6,7 +6,11 @@ OpenAmigaVideoHybrid is an Open Hardware implementation of the Video Hybrid inte
 ### Summary
 The *Video Hybrid*, also known as *VIDIOT*, is a hybrid integrated circuit acting as a Digital-to-Analog Converter (DAC), which converts the digital 4-bit per color video signal of the Amiga into standard (analog) signals suitable to drive a monitor or TV.
 
-It is used in the Amiga models A500, A500+, A1000, A2000 and A3000. The Amiga 3000 actually uses two Hybrids: one for the 15kHz video output from Denise and one for the 31kHz video output from Amber.
+It is used in Amiga models A500, A500+, A1000, A2000 and A3000. The Amiga 3000 actually uses two Hybrids: one for the 15kHz video output from Denise and one for the 31kHz video output from Amber. Two Hybrids are also used in the [GBA1000 A1000 Clone](https://www.amigawiki.org/doku.php?id=de:models:gb_a1000).
+
+It is also used in some add-on cards, such as the [Commodore A2320 Deinterlacer](https://amiga.resource.cx/exp/a2320).
+
+The Video Hybrid is a reliable component that usually "just works", but if it gets damaged there is no way of repairing it, the only option is to replace it.
 
 ### Architecture
 The Video Hybrid has 5 sections, one for each of the red, green and blue colors, one for the synchronization signal and one for a composite monochrome signal.
