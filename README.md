@@ -52,7 +52,7 @@ The tables below lists the component values originally used by Commodore, along 
 |R35\*\*\*                                     |3.9k        |19.6k    |20k   |22k         |
 |R36\*\*\*                                     |120         |270      |220   |220         |
 |R37\*\*\*, R38\*\*\*                          |36          |36       |36    |75\|\|75    |
-|**Different Parts Count**                     |**17**      |**17**   |**16**|**11**      |
+|**Different Parts Count**                     |**17**      |**17**   |**16**|**10**      |
 
 |Other Components                    |Value   |
 |------------------------------------|--------|
